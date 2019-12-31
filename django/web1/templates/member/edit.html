@@ -1,0 +1,48 @@
+{% include "./header.html" %}
+<body>
+    {% include "./menu.html" %}
+    <form action="/member/edit" method="post">
+        아이디 : <input type="text" name="id" value="{{ one.0 }}" readonly />
+        이름 : <input type="text" name="name" value="{{ one.2 }}" />    
+        나이 : <input type="text" name="age" value="{{ one.3 }}" />
+    <input type="submit" class="btn btn-warning" value="정보수정" />
+    </form>
+
+
+    <!--  -->
+
+    <!-- <div class="container"
+        style="border:15px solid #cccccc">
+        <form action="/member/login" method="post">
+        <div class="mybox" style="border:2px solid #ffccff"
+            <h3>회원정보수정</h3>
+            <hr />
+
+            <div class ="form-inline" style="margin-bottom: 20px;">
+                <label style="width:100px"></label>
+                아이디 : <input type="text" value="{{ one.0 }}" readonly />
+            </div>
+
+            <div class ="form-inline" style="margin-bottom: 20px;">
+                <label style="width:100px"></label>
+                이름 : <input type="text" value="{{ one.2 }}" />
+            </div>
+
+            <div class ="form-inline" style="margin-bottom: 20px;">
+                <label style="width:100px"></label>
+                나이 : <input type="text" value="{{ one.3 }}" />
+            </div>
+
+            <div class ="form-inline" style="margin-bottom: 20px;">
+                <label style="width:100px"></label>
+                <input type="submit" value="정보수정" />
+            </div>
+
+            <hr />
+
+        </div>
+        </form>
+    </div> -->
+
+</body>
+</html>
