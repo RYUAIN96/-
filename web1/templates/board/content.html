@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <div style="margin-top:50px; margin-bottom: 50px;">
+            <h3>글 내용</h3>
+        </div>
+        <table class="table">
+            <tr>
+                <th class="bg-light">글번호</th>
+                <td>{{ one.0 }}</td>
+            </tr>
+            <tr>
+                <th class="bg-light">제목</th>
+                <td>{{ one.1 }}</td>
+            </tr>
+            <tr>
+                <th class="bg-light">내용</th>
+                <td>{{ one.2 | linebreaksbr }}</td>
+            </tr>
+            <tr>
+                <th class="bg-light">작성자</th>
+                <td>{{ one.3 }}</td>
+            </tr>
+            <tr>
+                <th class="bg-light">조회수</th>
+                <td>{{ one.4 }}</td>
+            </tr>            
+            <tr>
+                <th class="bg-light">날짜</th>
+                <td>{{ one.5 }}</td>
+            </tr>            
+        </table>
+        <a href="/board/list" class="btn btn-secondary">목록으로</a>
+        <a href="/board/content" class="btn btn-success">이전글</a>
+        <a href="/board/content" class="btn btn-success">다음글</a>
+        <a href="/board/edit" class="btn btn-success">글수정</a>
+        <a href="/board/delete" class="btn btn-warning">글삭제</a>
+
+    </div>
+
+</body>
+</html>
